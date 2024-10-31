@@ -1,0 +1,101 @@
+
+.accordion .accordion-heading {
+    padding: 2px;
+    border: 1px solid #e5e5e5;
+}
+.accordion .accordion-heading .accordion-title {
+    margin-bottom: 0;
+    display: block;
+}
+.accordion .accordion-heading .accordion-title a {
+    position: relative;
+    display: block;
+    font-weight: bold;
+    padding: 15px 20px 17px;
+    margin: 0 0 -2px;
+    background: #f0f0f0;
+    color: #EF4A43;
+}
+.accordion .accordion-heading .accordion-title a:after {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    padding-top: 16px;
+    content: '\f056';
+    font-family: 'FontAwesome';
+    text-align: center;
+    border-left: 1px solid #e5e5e5;
+    top: -2px;
+    right: 0px;
+    color: #EF4A43;
+}
+.accordion .accordion-heading .accordion-title a.collapsed:after {
+    content: '\f055';
+    color: #272727;
+}
+.accordion .accordion-heading .accordion-title a.collapsed {
+    background: #fff;
+    margin: 0;
+    padding: 15px 20px;
+    color: #272727;
+}
+.accordion-item.cover.active .accordion-heading .accordion-title a {
+    background: rgba(255, 255, 255, 1);
+}
+.accordion-item.cover.active .accordion-heading {
+    border-bottom: 1px solid #fff;
+}
+.accordion .accordion-collapse {
+    padding: 2px;
+    border: 1px solid #e5e5e5;
+    margin-top: -1px;
+    padding-top: 0;
+}
+.accordion .accordion-collapse .accordion-body {
+    padding: 15px 20px;
+    background: #f0f0f0;
+}
+.accordion-item.cover.active .accordion-collapse .accordion-body {
+    background: rgba(255, 255, 255, 0.9);
+}
+.accordion-item.cover .accordion-heading {
+    border: 0;
+    border-bottom: 1px solid #fff;
+}
+.accordion .accordion-item {
+    margin-bottom: -1px;
+}
+.accordion.toggle .accordion-item {
+    margin-bottom: 10px;
+}
+.accordion.toggle .accordion-heading .accordion-title a.collapsed:after {
+    content: '\f078';
+}
+.accordion.toggle .accordion-heading .accordion-title a:after {
+    content: '\f077';
+}
+.accordion.faq.toggle .accordion-heading {
+    border: 0;
+    padding: 0;
+}
+.accordion.faq.toggle .accordion-heading .accordion-title a {
+    background: #fbfbfb;
+}
+.accordion.faq.toggle .accordion-collapse {
+    padding: 0;
+    border: 0;
+}
+.accordion.faq.toggle .accordion-collapse .accordion-body {
+    background: transparent;
+}
+.accordion.faq.toggle .accordion-heading .accordion-title a:after {
+    display: none;
+}
+.accordion.faq.toggle .accordion-item {
+    margin-bottom: 10px;
+    border-left: 2px solid #f0f0f0;
+    position: relative;
+}
+.accordion.faq.toggle .accordion-item.active {
+    border-left-color: #EF4A43;
+}
